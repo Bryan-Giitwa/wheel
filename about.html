@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
+      --font-family: 'Poppins', sans-serif;
+      --color-primary: #3498db;
+      --color-secondary: #2c3e50;
+      --color-text: #7f8c8d;
+      --background-color: #f5f6fa;
+      --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --box-shadow-hover: 0 8px 12px rgba(0, 0, 0, 0.15);
+      --border-radius: 10px;
+      --transition: transform 0.3s ease;
+    }
+
+    * {
+      padding: 0;
+      box-sizing: border-box;
+      font-family: var(--font-family);
+    }
+
+    body {
+      background: var(--background-color);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      color: var(--color-secondary);
+      margin-bottom: 1rem;
+    }
+
+    .header p {
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      transition: var(--transition);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--box-shadow-hover);
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      color: var(--color-secondary);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .feature-card p {
+      color: var(--color-text);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .feature-card {
+        padding: 1rem;
+      }
+
+      .feature-icon {
+        font-size: 1.5rem;
+      }
+
+      .feature-card h3 {
+        font-size: 1rem;
+      }
+
+      .feature-card p {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 1.5rem;
+      }
+
+      .feature-card {
+        padding: 0.75rem;
+      }
+
+      .feature-icon {
+        font-size: 1.2rem;
+      }
+
+      .feature-card h3 {
+        font-size: 0.9rem;
+      }
+
+      .feature-card p {
+        font-size: 0.7rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Who are Windscreen Mania?</h1>
+      <p>Windscreen Mania is your trusted auto glass and tinting specialist, dedicated to keeping your vehicle safe,
+        stylish, and road-ready. From expert glass repairs and full windscreen replacements to high-quality tinting
+        solutions, we offer top-notch services tailored to meet every driver’s needs. Our skilled technicians combine
+        precision and care, ensuring every repair or installation meets the highest standards. Whether you’re dealing
+        with a cracked windscreen or looking to upgrade your car’s appearance with professional tinting, Windscreen
+        Mania guarantees fast, reliable, and affordable solutions.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <!-- Feature Cards -->
+      <div class="feature-card">
+        <i class="fas fa-clipboard-list feature-icon"></i>
+        <h3>Quick Job Card</h3>
+        <p>A record card related to specific jobs detailing time taken and parts used.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-file-invoice-dollar feature-icon"></i>
+        <h3>Easy Estimate</h3>
+        <p>Share estimates with potential customers showing services and parts to be used.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-receipt feature-icon"></i>
+        <h3>E-Invoicing</h3>
+        <p>Automate accounts payable with our electronic invoicing solutions.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-bell feature-icon"></i>
+        <h3>Service Reminder</h3>
+        <p>Track due/overdue vehicles and send SMS reminders to customers.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-calendar-check feature-icon"></i>
+        <h3>Book Service Appointment</h3>
+        <p>Free appointment management with automated reminders.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-boxes feature-icon"></i>
+        <h3>Inventory Management</h3>
+        <p>Track parts stock levels and manage purchases/sales efficiently.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-chart-line feature-icon"></i>
+        <h3>Reporting & Analytics</h3>
+        <p>Comprehensive reports on sales, payments, stock value, and efficiency.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-wallet feature-icon"></i>
+        <h3>Garage Expenses</h3>
+        <p>Free expense management system to track operational costs.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Add hover effect using event delegation
+    document.querySelector('.features-grid').addEventListener('mouseover', (event) => {
+      if (event.target.closest('.feature-card')) {
+        event.target.closest('.feature-card').style.boxShadow = 'var(--box-shadow-hover)';
+      }
+    });
+
+    document.querySelector('.features-grid').addEventListener('mouseout', (event) => {
+      if (event.target.closest('.feature-card')) {
+        event.target.closest('.feature-card').style.boxShadow = 'var(--box-shadow)';
+      }
+    });
+  </script>
+</body>
+
+</html>
