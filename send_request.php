@@ -112,10 +112,10 @@ require_once('config.php');
                 $('#pickup_address').attr('required', true)
             } else {
                 $('#pickup_address').parent().hide()
-                $('#pickup_address').attr('required', false)
+                $('#pickup_address').attr('required', false) // Ensure it's not required for Drop Off
             }
+        }).trigger('change'); // Trigger change event on page load to set the initial state
 
-        })
         $('#request_form').submit(function(e) {
             e.preventDefault()
             start_loader();
